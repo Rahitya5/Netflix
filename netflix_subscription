@@ -1,0 +1,10 @@
+# Netflix
+Alice, Bob, and Charlie are contributing to buy a Netflix subscription. However, Netfix allows only two users to share a subscription.
+# Code
+subc_cases=int(input())
+for i in range(subc_cases):
+    a,b,c,x=map(int,input().split())
+    if a+b>=x or a+c>=x or b+c>=x or a>=x or b>=x or c>=x:
+        print("YES")
+    else:
+        print("NO")
